@@ -1,0 +1,77 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Easy_Real_ESRGAN</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\models\realesr-animevideov3-x2.bin" />
+    <None Remove="Assets\models\realesr-animevideov3-x2.param" />
+    <None Remove="Assets\models\realesr-animevideov3-x3.bin" />
+    <None Remove="Assets\models\realesr-animevideov3-x3.param" />
+    <None Remove="Assets\models\realesr-animevideov3-x4.bin" />
+    <None Remove="Assets\models\realesr-animevideov3-x4.param" />
+    <None Remove="Assets\models\realesrgan-x4plus-anime.bin" />
+    <None Remove="Assets\models\realesrgan-x4plus-anime.param" />
+    <None Remove="Assets\models\realesrgan-x4plus.bin" />
+    <None Remove="Assets\models\realesrgan-x4plus.param" />
+    <None Remove="Assets\realesrgan-ncnn-vulkan.exe" />
+    <None Remove="Assets\vcomp140.dll" />
+    <None Remove="Assets\vcomp140d.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+    <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
+    <PackageReference Include="WPF-UI" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\models\realesr-animevideov3-x2.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesr-animevideov3-x2.param">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesr-animevideov3-x3.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesr-animevideov3-x3.param">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesr-animevideov3-x4.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesr-animevideov3-x4.param">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesrgan-x4plus-anime.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesrgan-x4plus-anime.param">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesrgan-x4plus.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\models\realesrgan-x4plus.param">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\realesrgan-ncnn-vulkan.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\vcomp140.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\vcomp140d.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
